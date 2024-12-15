@@ -1,8 +1,6 @@
 install:
 	@git pull
 	@clear
-	pacman -S bash curl wget jq
-	pacman -S python python-pip nano bc xh
 	pacman -S mingw-w64-x86_64-clang mingw-w64-x86_64-ncurses-utils mingw-w64-x86_64-tesseract
 	python -m pip install -r data/requirements.txt
 	@gcc main.c -o main
