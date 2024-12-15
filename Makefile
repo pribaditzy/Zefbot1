@@ -1,9 +1,9 @@
 install:
 	@git pull
 	@clear
-	apt-get install bash curl wget jq
-	apt-get install python python-pip nano bc xh
-	apt-get install clang ncurses-utils tesseract
+	pacman -S bash curl wget jq
+	pacman -S python python-pip nano bc xh
+	pacman -S mingw-w64-x86_64-clang mingw-w64-x86_64-ncurses-utils mingw-w64-x86_64-tesseract
 	python -m pip install -r data/requirements.txt
 	@gcc main.c -o main
 	@clear
